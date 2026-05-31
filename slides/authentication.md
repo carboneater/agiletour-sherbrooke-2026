@@ -17,6 +17,8 @@ layout: section
 
 # Authenticate Like Everybody Is
 
+- Moi, Agile Tour Sherbrooke 2026
+
 ---
 layout: two-cols-header
 level: 2
@@ -34,9 +36,13 @@ level: 2
 
 ::right::
 
-![Carney's Signature](/100-front.jpg)
+<img alt="100CAD Bill" src="/public/100-front.jpg" style="object-fit: contain;min-height:50vh;" />
+
+<div class="abs-br">
 
 Source: [Bank of Canada](https://www.bankofcanada.ca/banknotes/bank-note-series/frontiers/100-polymer-note/)
+
+</div>
 
 <!--
 Authenticité: The Author is who they claim to be

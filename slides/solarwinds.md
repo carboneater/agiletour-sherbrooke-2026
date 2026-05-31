@@ -68,6 +68,8 @@ MA & MB -.-> DC{"H(📦A)🟰H(📦B)"} -->P@{label: Public, shape: cyl}
 ```
 
 ---
+level: 2
+---
 
 # Bon, mais pas parfait
 

@@ -68,7 +68,7 @@ level: 2
 
 💸
 
-![Attack RIP](/rip.jpeg)
+![Attack RIP](/public/rip.jpeg)
 
 ---
 level: 2
@@ -83,7 +83,7 @@ level: 2
 <v-click>
 <center>
 
-![[XKCD: Duty Calls](https://xkcd.com/386/)](/duty-calls.png)
+![[XKCD: Duty Calls](https://xkcd.com/386/)](/public/duty-calls.png)
 
 </center>
 </v-click>
@@ -190,7 +190,7 @@ level: 3
 
 # OWASP Dependency-Track
 
-![OWASP Dependency Track](/owasp-dt-dashboard.png)
+![OWASP Dependency Track](/public/owasp-dt-dashboard.png)
 
 source: https://owasp.org/www-project-dependency-track/
 
@@ -203,7 +203,7 @@ level: 2
 
 [Example: Sigstore-JS](https://www.npmjs.com/package/sigstore#provenance)
 
-![NPM-SigStore](/npm-sigstore.png)
+![NPM-SigStore](/public/npm-sigstore.png)
 
 Source: https://github.blog/security/supply-chain-security/introducing-npm-package-provenance/
 

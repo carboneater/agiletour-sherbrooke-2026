@@ -87,6 +87,7 @@ image: beer.jpg
 
 ---
 layout: two-cols
+level: 2
 ---
 
 # Damned if you do
@@ -97,7 +98,7 @@ layout: two-cols
 - MOVEit (2023)
 - Crowdstrike (2024)
 - Shai-Hulud (2025)
-- LiteLLM (2026)
+- PostHog/LiteLLM (2026)
 
 
 (Liste Très  Non Exhaustive!)
@@ -120,6 +121,24 @@ line [321,  1438,  1323,  1691,  1223,1612,  6708,  6885,  7322,  5673,   5732, 
 </v-click>
 
 ---
+level: 2
+---
+
+# Pause Lexicale
+
+- CVE: Common Vulnerabilities & Exposures
+
+- CVSS: Common Vulnerability Scoring System (0 - 10.0)
+
+<v-click>
+
+- EPSS: Exploit Prediction Scoring System (0 - 1)
+
+</v-click>
+
+
+---
+hideInToc: true
 layout: section
 ---
 
@@ -127,6 +146,10 @@ layout: section
 
 ---
 src: slides/solarwinds.md
+---
+
+---
+src: slides/dependency-confusion.md
 ---
 
 ---
@@ -158,6 +181,10 @@ layout: section
 
 ---
 src: slides/authentication.md
+---
+
+---
+src: slides/insider.md
 ---
 
 ---
