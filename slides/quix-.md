@@ -276,11 +276,19 @@ level: 3
 flowchart LR
 D((Devs)) --> C[Code] --> B[Build] --> P[Prod]
 C ==>|🔒|R
-A((Attacker ☠️)) -.-x|🦠| R([PyPI]) --> B
+A((Attacker ☠️)) -.-x|🦠| R@{label: Package<br/>Index, shape: db} --> B
+
+A ~~~ C
 
 classDef good color:green,stroke:green;
 class B,C,D,P,R good;
 classDef pwnt color:red,stroke:red;
 class A pwnt;
 ```
+</center>
+
+<center>
+    <v-click>
+        <em>Ils vécurent heureux et eurent beaucoup de clients?</em>
+    </v-click>
 </center>

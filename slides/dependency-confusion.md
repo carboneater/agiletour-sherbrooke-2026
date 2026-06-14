@@ -58,3 +58,44 @@ classDef pwnt color:red,stroke:red;
 class M,Ma,O,U pwnt;
 ```
 
+---
+layout: two-cols-header
+level: 2
+---
+
+# Mitigations
+
+::left::
+
+-  Réserver le `@scope` publiquement
+    + Restreint qui peut publier
+    - Fuite de l'information interne
+    - Pas une garantie dans le temps
+        - Fiasco NPM/Kix/Left-Pad
+
+::right::
+
+<v-click>
+
+- Déconnecter les packages privés des sources publiques
+
+```diff
+packages:
+  '@my-company/*':
+    access: $all
+    publish: $authenticated
+    unpublish: $authenticated
+-   proxy: npmjs
+  '@*/*':
+    access: $authenticated
+    publish: $authenticated
+    proxy: npmjs
+  '**':
+    access: $authenticated
+    publish: $authenticated
+    proxy: npmjs
+```
+
+Référence:  [Verdaccio Docs](https://www.verdaccio.org/docs/best/#remove-proxy-to-increase-security-at-private-packages)
+
+</v-click>

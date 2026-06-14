@@ -52,8 +52,10 @@ Non-Répudiation: There is exactly one author and we can positively identify the
 
 
 ---
+level: 2
+---
 
-# Validation
+# Git Commit Signing: Validation
 
 ```mermaid
 flowchart LR
@@ -88,7 +90,7 @@ DG -->|Push| OG
 # ToC ⚖️ ToU
 
 - La clé privée est encryptée avec un mot/phrase de passe
-- GPG-Agent décrypte la clé pour une période de 10 minutes (par défaut)
+- GPG-Agent décrypte la clé pour une période (par défaut: 10 minutes)
 
 ---
 layout: section
@@ -99,3 +101,40 @@ level: 3
 
 `sudo apt install sequoia-git`  
 `sq-git init`
+
+---
+level: 2
+---
+
+> Tu m'a convaincu! À partir de maintenant, je signe tout!
+
+```mermaid
+flowchart LR
+S@{label: Sigstore, shape: docs}
+C((Code)) --> B[Build] --> D[Container] -->H[Host] --> Prod
+N@{label: packages, shape: db} --> B
+S -.->|✅| C & N & D
+
+DK@{label: Distro Keys, shape: docs} -.->|✅| DP@{label: Distro Packages, shape: db} --> H & D
+
+classDef signed stroke:#4C4;
+class S,C,B,N,D signed;
+classDef distro stroke:#44C;
+class DK,DP,H distro;
+```
+
+<v-click>Ils vécurent heureux et n'eurent pas beaucoup d'incidents...</v-click>
+
+<v-click>N'est-ce pas?</v-click>
+
+---
+level: 2
+---
+
+# On est juste à la moitié du chemin!
+
+Les mécanismes de validation à la consommation des packages sont encore manquants!
+
+![SSL EV SCAM](/public/ssl-2019.png)
+
+(Sauf pour les packages des OS)
