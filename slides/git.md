@@ -26,6 +26,9 @@ layout: section
 
 # Les attaques via Git(Hub)
 
+### PostHog (SHA1-Hulud 2.0)
+### AquaSecurity (Trivy ... & LiteLLM)
+
 ---
 level: 2
 ---
@@ -45,7 +48,7 @@ level: 2
   <li v-click>Forker le projet</li>
   <li v-click>Créer un payload d'exfiltration de secret</li>
   <li v-click>L'injecter dans une config de pipeline</li>
-  <li v-click>Créer un PR `upstream`</li>
+  <li v-click>Créer un PR <em>upstream</em></li>
   <li v-click>Actions Actionnent</li>
   <li v-click>Secrets!</li>
   <li v-click>Supprimer le PR et la branche
@@ -78,35 +81,34 @@ Le pipeline teste le code de la branche de l'attaquant
 
 Le pipeline s'exécute comme si le code avait déjà été mergé dans la branche (ex: main)
 
+::bottom::
+
+`on: pull_request_target` est un signe que quelqu'un essaie d'utiliser les pipelines pour faire quelque chose que le CI ne devrait pas faire...
+
 ---
 layout: two-cols-header
 level: 2
 ---
 
-# Déjà vu?
+# aquasecurity/trivy-action
+
+19-20 mars
 
 ::left::
 
-<center>
+- ~17:43 UTC: Réécriture de l'historique git et 83 tags de versions sur 2 actions
 
-## PostHog
+```yaml
+uses: aquasecurity/trivy-action@v6.6.6
+```
 
-### (Sha1-Hulud 2.0)
+- ~20:38 UTC: L'attaque est contenue. Les versions malicieuses sont révoquées
 
-</center>
 
 ::right::
 
-<center>
+<V-Click>
 
-## Trivy
+C'est aussi pourquoi tous vos outils de sécurité ont soudainement sévi et insisté que vos GitHub Actions soient associés à un commit spécifiquement
 
-</center>
-
-::bottom::
-
-<center>
-
-Et ce ne sont pas les seuls!
-
-</center>
+</V-Click>

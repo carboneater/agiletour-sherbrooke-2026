@@ -1,12 +1,12 @@
 ---
 layout: section
-level: 2
+level: 1
 ---
 
 # Dependency Confusion
 
 ---
-level: 3
+level: 2
 ---
 
 # Dependency Confusion
@@ -32,7 +32,7 @@ M -.-> SO
 ```
 
 ---
-level: 3
+level: 2
 ---
 
 # Dependency Confusion
@@ -51,8 +51,7 @@ U-.->|🦠|M
 P@{label: "@Company/package@1.0.1", shape: docs} --->R
 Ma@{label: "@Company/package@1.0.2", shape: docs} -->|🦠| U
 
-Interne -->|🦠| O@{label: "@Company/package@1.0.2", shape: docs}
-M -.->|🦠| O
+M -.->|🦠| O@{label: "@Company/package@1.0.2", shape: docs}
 
 classDef pwnt color:red,stroke:red;
 class M,Ma,O,U pwnt;
@@ -87,12 +86,10 @@ packages:
     unpublish: $authenticated
 -   proxy: npmjs
   '@*/*':
-    access: $authenticated
-    publish: $authenticated
+    access: $all
     proxy: npmjs
   '**':
-    access: $authenticated
-    publish: $authenticated
+    access: $all
     proxy: npmjs
 ```
 

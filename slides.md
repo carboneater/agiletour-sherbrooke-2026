@@ -45,6 +45,9 @@ layout: image-left
 - 3 ans en sécurité temps plein
   - 2 ans automatisation des réponses aux menaces cyber
   - 1 an cryptographie
+- Dev (Principalement)
+  - TS
+  - Python
 
 ---
 image: sleep.jpg
@@ -54,7 +57,7 @@ level: 2
 
 # <3 Supply Chain
 
-- `unattended-upgrades` @ 0400 HE
+- `unattended-upgrades` @ 04:00 HE
 - `renovate-bot` (oss) @ 00:00 - 08:00 HE
 - `renovate-bot` (interne) @ 08:00 - 00:00 HE
 
@@ -90,6 +93,10 @@ image: beer.jpg
 <div class="abs-br">Photo by <a href="https://unsplash.com/@barncreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fábio  Alves</a> on <a href="https://unsplash.com/photos/beer-dispensers-_fLgxjACz5k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
 
 ---
+src: slides/static.md
+---
+
+---
 src: slides/pourquoi.md
 ---
 
@@ -117,7 +124,7 @@ src: slides/git.md
 ---
 
 ---
-src: slides/postinstall-scripts.md
+src: slides/npm.md
 ---
 
 ---
@@ -166,3 +173,5 @@ class: text-center
 # Insultes?
 
 <PoweredBySlidev mt-10 />
+
+Slides: https://github.com/carboneater/agiletour-sherbrooke-2026

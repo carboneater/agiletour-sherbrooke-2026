@@ -1,23 +1,8 @@
 ---
-hideInToc: true
 layout: section
 ---
 
-# Dance Like Nobody's Watching
-
-# Encrypt Like Everyobdy Is
-
-- Dr Werner Vogels, Amazon CTO
-
----
-layout: section
----
-
-# Code Like Nobody's Watching
-
-# Authenticate Like Everybody Is
-
-- Moi, Agile Tour Sherbrooke 2026
+# Signatures Cryptographiques
 
 ---
 layout: two-cols-header
@@ -38,9 +23,9 @@ level: 2
 
 <img alt="100CAD Bill" src="/public/100-front.jpg" style="object-fit: contain;min-height:50vh;" />
 
-<div class="abs-br">
+<div class="abs-bl">
 
-Source: [Bank of Canada](https://www.bankofcanada.ca/banknotes/bank-note-series/frontiers/100-polymer-note/)
+Image Source: [Bank of Canada](https://www.bankofcanada.ca/banknotes/bank-note-series/frontiers/100-polymer-note/)
 
 </div>
 
@@ -86,6 +71,8 @@ DG -->|Push| OG
 ```
 
 ---
+level: 2
+---
 
 # ToC ⚖️ ToU
 
@@ -101,6 +88,10 @@ level: 3
 
 `sudo apt install sequoia-git`  
 `sq-git init`
+
+➕ Le code contient les clés publiques
+
+➖ Difficile à gérer en large déploiement
 
 ---
 level: 2
@@ -123,9 +114,9 @@ classDef distro stroke:#44C;
 class DK,DP,H distro;
 ```
 
-<v-click>Ils vécurent heureux et n'eurent pas beaucoup d'incidents...</v-click>
+<v-click><p>Ils vécurent heureux et n'eurent pas beaucoup d'incidents...</p></v-click>
 
-<v-click>N'est-ce pas?</v-click>
+<v-click><p>N'est-ce pas?</p></v-click>
 
 ---
 level: 2

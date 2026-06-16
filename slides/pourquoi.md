@@ -76,3 +76,4 @@ level: 2
 | CVSS     | Common Vulnerability Scoring System | 0 - 10     | 10.0                       |
 | EPSS     | Exploit Prediction Scoring System   | 0 - 100%   | 100 % (À Posteriori)       |
 | KEV      | Known Exploited Vulnerability       |            | Oui. 0-Day                 |
+| CNA      | CVE Numbering Authority             |            | MITRE                      |

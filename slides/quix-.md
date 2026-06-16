@@ -36,7 +36,7 @@ layout: image
 level: 2
 ---
 
-# Timeline
+# Chronologie
 
 8 septembre
 
@@ -56,7 +56,7 @@ level: 2
 
 # Payload: CryptoStealer
 
-- Exécuté dans le navigateur des utilisateurs lorsqu'emballé dans la distributio
+- Exécuté dans le navigateur des utilisateurs lorsqu'emballé dans la distribution
 - Intercepte les transactions en cryptomonaies et interactions web3
 - Redirige les paiments en cryptomonaies vers des addresses contrôlées par l'attaquant
 
@@ -84,6 +84,8 @@ level: 2
 <center>
 
 ![[XKCD: Duty Calls](https://xkcd.com/386/)](/public/duty-calls.png)
+
+Image: XKCD
 
 </center>
 </v-click>
@@ -143,23 +145,25 @@ level: 2
 ```mermaid
 flowchart LR
 C((Code)) --> B[Build] --> P[Prod]
-PyPI([PyPI]) --x|☠️| B
+R@{label: Registry, shape: db} --x|☠️| B
 
 classDef good color:green,stroke:green;
 class C good;
 classDef pwnt color:red,stroke:red;
-class PyPI pwnt;
+class R pwnt;
 ```
 
 </center>
 
 ::left::
 
-- Via PyPI
+- Via _Registries_ Publics
 - Ou un Mirroir Privé
 
 ::right::
 
+- `npm audit`
+- `npx better-npm-audit`
 - `pip-audit`
 - `uv-audit`
 
@@ -175,12 +179,12 @@ level: 2
 ```mermaid
 flowchart LR
 C((Code)) --> B[Build] -->|☠️?| P[Prod]
-N([NPM]) -->|☠️| B
+R@{label: Registry, shape: db} -->|☠️| B
 
 classDef good color:green,stroke:green;
 class C good;
 classDef pwnt color:red,stroke:red;
-class N,B,P pwnt;
+class B,P,R pwnt;
 ```
 </center>
 
