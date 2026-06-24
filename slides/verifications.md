@@ -2,6 +2,39 @@
 layout: section
 ---
 
+# TypoSquatting
+
+### `crossenv`
+
+### `cross-env`
+
+---
+layout: two-cols-header
+---
+
+# TypoSquatting
+
+::left::
+
+## GFournier.ca
+
+<img src="/public/gfournier-ca.png" />
+
+::right::
+
+<v-click>
+
+<h2>GFournier.com</h2>
+
+<img src="/public/gfournier-com.png"/>
+
+</v-click>
+
+---
+layout: section
+level: 2
+---
+
 # Vérification$
 
 <center>

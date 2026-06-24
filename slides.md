@@ -84,6 +84,7 @@ image: beer.jpg
 # Avertissements
 
 - Pardonnez mon _franglais_
+- Ce talk n'est pas poli
 - Mes opinions sont les miens
   - Et n'engagent que moi
   - Vive Extreme Programming!
