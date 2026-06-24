@@ -1,11 +1,8 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Longue vie à la chaîne d'approvisionnement!
 
-To start the slide show:
+Pour lancer la présentation:
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev at the [documentation](https://sli.dev/).
+- `npm ci`
+- `npx slidev --remote`
+    - Avec Docker `docker run -it -p 3030:3030 --rm -v $(pwd):/talk -w /talk node:alpine npx slidev --remote`
+- visiter <http://localhost:3030>
